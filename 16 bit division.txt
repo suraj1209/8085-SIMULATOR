@@ -1,0 +1,19 @@
+lxi b,0000h
+lhld 4802h
+xchg
+lhld 4800h
+mov a,l
+sub e
+mov l,a
+mov a,h
+sbb d
+mov h,a
+jc 4517h
+inx b
+jmp 450ah
+dad d
+shld 4806h
+mov l,c
+mov h,b
+shld 4804h
+hlt

@@ -1,0 +1,4 @@
+mvi a,05h
+mvi b,05h
+add b
+hlt

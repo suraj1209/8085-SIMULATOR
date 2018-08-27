@@ -1,0 +1,19 @@
+lxi h,5000h
+mov c,m
+dcr c
+mov d,c
+lxi h,5001h
+mov a,m
+inx h
+cmp m
+jc 2014h
+mov b,m
+mov m,a
+dcx h
+mov m,b
+inx h
+dcr d
+jnz 2009h
+dcr c
+jnz 2005h
+hlt

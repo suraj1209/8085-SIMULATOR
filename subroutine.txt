@@ -1,0 +1,9 @@
+lxi h,0000h
+mov b,c
+dad d
+dcr b
+jnz 4604h
+xchg
+dcr c
+jnz 4600h
+ret
